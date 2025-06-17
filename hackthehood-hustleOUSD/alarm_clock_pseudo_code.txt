@@ -1,0 +1,15 @@
+START
+
+1. ASK "what time format do you prefer? Military or Standard"
+2. ASK "A.M or P.M?"
+3. ASK "what day do you want to set up your alarm for?"
+4. ASK "At what time do you wish to play the alarm"
+5. If alarm_time IS EQUAL TO current_time:
+5a1. play alarm
+5a2. ASK. "Do you wish to snooze or stop the alarm?"
+5a3. If snooze: pause alarm for 5 minutes
+5a4. If stop: turn alarm off (stop program)
+6. If alarm_time IS NOT EQUAL TO current_time:
+6a. loop from step 5 until condition in step 5 is met 
+
+STOP
